@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">doctorhelpCOOL</string>
+    <string name="push">PUSH</string>
+    <string name="alphabet">ALPHABET</string>
 </resources>
