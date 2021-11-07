@@ -12,5 +12,36 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/BiggerTextView</item>
     </style>
+
+    <style name="Theme.Doctorhelp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Doctorhelp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Doctorhelp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NewStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/red</item>
+
+
+
+    </style>
+
+    <style name="newButtonsStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/darkGreen</item>
+        <item name="android:textColor">@color/yellow</item>
+
+    </style>
+
+    <style name="BiggerTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">24sp</item>
+
+
+    </style>
+
+
 </resources>

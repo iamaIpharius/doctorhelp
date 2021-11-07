@@ -1,5 +1,6 @@
 package com.alex.doctorhelp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         val nextLetterButton: Button = findViewById(R.id.alphabet_button)
         var coolAlphabetList = setAlphabet()
 
+        val nextActButton: Button = findViewById(R.id.next_activity_button)
+        val nextActIntent: Intent = Intent(this, NextActivityTest::class.java)
 
         nextLetterButton.setOnClickListener {
             if (coolAlphabetList.size > 0) {
@@ -31,6 +34,11 @@ class MainActivity : AppCompatActivity() {
                 outputTextView.text = coolAlphabetList[0].toString()
                 coolAlphabetList.removeAt(0)
             }
+        }
+
+        nextActButton.setOnClickListener {
+            startActivity(nextActIntent)
+
         }
 
 

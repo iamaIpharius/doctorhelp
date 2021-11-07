@@ -22,11 +22,21 @@
         android:id="@+id/alphabet_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/push"
+        android:text="next letter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/output_text_view" />
+
+    <Button
+        android:id="@+id/next_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next ACT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/alphabet_button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
