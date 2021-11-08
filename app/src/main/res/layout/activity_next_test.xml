@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".NextActivityTest">
 
+
+
     <LinearLayout
 
         android:id="@+id/cardLayuot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-
         android:orientation="vertical">
 
         <com.google.android.material.card.MaterialCardView
@@ -167,9 +167,10 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.button.MaterialButton
+
             style="@style/newButtonsStyle"
             android:text="Кнопочка"
-            android:id="@+id/materialButton"
+            android:id="@+id/greenButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
